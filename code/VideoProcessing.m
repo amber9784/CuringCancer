@@ -1,0 +1,1 @@
+pkg load image;% read an avi video file into a series of frames.x = aviread('Stack1_Fluorescence.avi', 1);

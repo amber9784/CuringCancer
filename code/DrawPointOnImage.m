@@ -1,0 +1,1 @@
+function DrawPointOnImage (img, pt)    figure  hold on  imshow(uint8(img));  h = plot(pt(1), pt(2), "ro", "MarkerSize", 12);  set (h,"MarkerFaceColor", get(h,"Color"));  hold off    end  

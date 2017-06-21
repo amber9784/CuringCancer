@@ -1,0 +1,1 @@
+function [masked_img] = ApplyMask(img, mask)masked_img = uint16(img) .* uint16(mask);end

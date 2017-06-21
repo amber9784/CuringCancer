@@ -1,0 +1,1 @@
+function [c_img] = CenterImage(img, moment)   [sx,sy]=size(img);   hx = floor(sx/2);   hy = floor(sy/2);      offset_x = hx - moment(1);   offset_y = hy - moment(2);      T = [eye(2), [offset_x; offset_y]];      c_img = imperspectivewarp(img, T);end

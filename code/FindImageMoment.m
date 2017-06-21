@@ -1,0 +1,1 @@
+function [moment] = FindImageMoment(img)s = regionprops(img, 'Centroid');moment = [floor(s(1).Centroid(1)), floor(s(1).Centroid(2))];end
