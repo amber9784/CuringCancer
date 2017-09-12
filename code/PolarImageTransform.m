@@ -1,5 +1,5 @@
 
-function [polar_img] = PolarImageTransform( input_file, shrink_factor )
+function [polar_img, nx, ny] = PolarImageTransform( input_file, shrink_factor )
 %%%%%% iris code %%%%%%
     im = input_file;
     [sx, sy] = size(im);
